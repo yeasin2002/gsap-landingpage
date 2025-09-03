@@ -1,8 +1,8 @@
-import { Navbar } from "@/components";
 import gsap from "gsap";
 import { ScrollTrigger, SplitText } from "gsap/all";
 
-// import Navbar from './components/Navbar.jsx'
+import { Hero, Navbar } from "@/components";
+
 // import Hero from './components/Hero.jsx'
 // import Cocktails from './components/Cocktails.jsx'
 // import About from './components/About.jsx'
@@ -16,7 +16,8 @@ const App = () => {
   return (
     <main>
       <Navbar />
-      {/* <Hero />
+      <Hero />
+      {/* 
 	 <Cocktails />
 	 <About />
 	 <Art />
