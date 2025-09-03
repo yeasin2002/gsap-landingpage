@@ -20,7 +20,7 @@ export const Navbar = () => {
         backgroundFilter: "blur(10px)",
         duration: 1,
         ease: "power1.inOut",
-      }
+      },
     );
   });
 
