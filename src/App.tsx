@@ -1,3 +1,4 @@
+import { Navbar } from "@/components";
 import gsap from "gsap";
 import { ScrollTrigger, SplitText } from "gsap/all";
 
