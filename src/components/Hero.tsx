@@ -11,7 +11,6 @@ export const Hero = () => {
 
   useGSAP(() => {
     const heroSplit = new SplitText(".title", { type: "chars, words" });
-
     const paragraphSplit = new SplitText(".subtitle", { type: "lines" });
 
     // Apply text-gradient class once before animating
@@ -29,18 +28,10 @@ export const Hero = () => {
     });
 
     gsap
-      .timeline({
-        scrollTrigger: {
-          trigger: "#hero",
-          start: "top top",
-          end: "bottom top",
-          scrub: true,
-        },
-      })
+      .timeline({ scrollTrigger: { trigger: "#hero", start: "top top", end: "bottom top", scrub: true } })
       .to(".right-leaf", { y: 200 }, 0)
       .to(".left-leaf", { y: -200 }, 0)
       .to(".arrow", { y: 100 }, 0);
-
     const startValue = isMobile ? "top 50%" : "center 60%";
     const endValue = isMobile ? "120% top" : "bottom top";
 
